@@ -16,9 +16,14 @@ CMD ["python", "./main.py"]
 
 
 
-############ To create docker image : ##################
+############ To create docker image ##################
 #   docker build -t python-imdb .
 #   - python-imdb : image name
 #   - . : location
+########################################################
+
+############ To launch our containered application #####
+#   docker build -t python-imdb .
+#   $ docker run -ti python-imdb:latest
 ########################################################
 
