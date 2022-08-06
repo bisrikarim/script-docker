@@ -6,7 +6,10 @@ FROM python:3.8
 ADD main.py .
 
 # Installing dependencies ==> look to imported libraries in our script main.py
-RUN pip install request beautifulSoup4
+RUN python3 -m pip install --upgrade pip
+RUN pip install --upgrade setuptools
+RUN python3 -m pip install requests
+RUN python3 -m pip install beautifulSoup4
 
 # Specify the entry command when we start our container
 CMD ["python", "./main.py"]
